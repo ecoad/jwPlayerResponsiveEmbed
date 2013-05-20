@@ -15,10 +15,10 @@ The player will resize based on the parent container and maintain a given config
     
     var sourceConfig = {
         sources: [
-            { file: 'http://content.bitsontherun.com/videos/YM7WQSiN-U1HHvOrV.mp4' },
-            { file: 'http://content.bitsontherun.com/videos/YM7WQSiN-EJ8fBsmZ.webm' }
+            { file: 'http://content.bitsontherun.com/videos/zzz-zzz.mp4' },
+            { file: 'http://content.bitsontherun.com/videos/zzz-zzz.webm' }
         ],
-        image: 'http://bespoke.coad.me/breathless/build/assets/graphics/video-still.jpg',
+        image: 'video-still.jpg',
         aspectRatio: { width: 16, height: 9 }
     };
     
