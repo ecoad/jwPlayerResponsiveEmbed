@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <title></title>
+</head>
+<body>
+  <div id='container'>
+
+<!-- Embed start -->
+<div class="video-container"></div>
+<script type='text/javascript' src='jwplayer.js'></script>
+<script type='text/javascript' src='jw-player-responsive-embed.js'></script>
+<script type='text/javascript'>
+if (typeof jwVideoId === 'undefined') { var jwVideoId = 1; }
+
+var config = {
+    sources: [
+        { file: 'http://content.bitsontherun.com/videos/YM7WQSiN-U1HHvOrV.mp4' },
+        { file: 'http://content.bitsontherun.com/videos/YM7WQSiN-EJ8fBsmZ.webm' }
+    ],
+    image: 'http://bespoke.coad.me/breathless/build/assets/graphics/video-still.jpg',
+    aspectRatio: { width: 16, height: 9 }
+};
+
+jwPlayerAdvancedEmbed({
+    videoId: jwVideoId++,
+    sources: config.sources,
+    image: config.image,
+    jwPlayerKey: 'YOUR PREMIUM KEY',
+    autostart: false,
+    skinUrl: 'skin.xml',
+    parentContainerCssSelector: '#container',
+    videoAspectRatio: config.aspectRatio
+});
+</script>
+<!-- Embed end -->
+
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</body>
+</html>
